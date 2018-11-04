@@ -1,0 +1,156 @@
+/* Default styles*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  width: 80%;
+  margin: 50px auto 0;
+}
+
+/* Default styles end*/
+
+/* Result Board Styles*/
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  font-style: italic;
+}
+
+tr > td:first-child::first-letter, tr > td:last-child::first-letter { /* If name is "john doe converts to John doe"*/
+  text-transform: capitalize;
+}
+
+tr > td:nth-child(3) {
+  text-align: right;
+}
+
+.fail {
+  color: red;
+}
+
+.topper {
+  color: greenyellow;
+}
+
+/* Result Board Styles end*/
+
+/* Navigation Styles */
+nav {
+  width: 100%;
+  background: lightskyblue;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+li > a {
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+}
+
+main {
+  margin-top: 100px;
+}
+/* Navigation Styles end */
+
+/* Admission Styles*/
+.admission {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form {
+  max-width: 600px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid #CCC;
+}
+
+.form__heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form__element:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+}
+
+label:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+}
+
+.submit {
+  text-align: right;
+}
+
+.submit__btn {
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit__btn:disabled {
+  cursor: not-allowed;
+}
+/* Admission Styles end*/
+
